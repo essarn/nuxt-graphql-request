@@ -3,6 +3,7 @@ import Client, { GraphQLClient } from 'graphql-request';
 import './vuex';
 import { Variables, GraphQLError } from 'graphql-request/dist/src/types';
 import { ASTNode } from 'graphql';
+import '@nuxtjs/types';
 
 interface NuxtGraphQLInstance extends GraphQLClient {
   rawRequest<T extends any>(
